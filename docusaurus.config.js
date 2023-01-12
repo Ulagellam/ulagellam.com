@@ -9,7 +9,7 @@ const config = {
   title: 'Ulagellam',
   tagline: 'Products beyond boundaries!',
   url: 'https://github.com',
-  baseUrl: '/ulagellam-website/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.png',
