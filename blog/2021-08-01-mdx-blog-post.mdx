@@ -12,9 +12,31 @@ Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/mar
 Use the power of React to create interactive blog posts.
 
 ```js
-<button onClick={() => {window.open("https://youtube.com")}}>Click me!</button>
+<button
+  class="button button--primary"
+  onClick={() => {
+    alert("You click the button!");
+  }}
+>
+  Click me!
+</button>
 ```
 
-<button onClick={() => {window.open("https://youtube.com")}}>Click me!</button>
+<button
+  class="button button--primary"
+  onClick={() => {
+    return (
+      <div class="alert alert--primary" role="alert">
+        <button aria-label="Close" class="clean-btn close" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        This is a<strong>primary</strong>
+        alert. You should probably pay attention to it.
+      </div>
+    );
+  }}
+>
+  Click me!
+</button>
 
 :::

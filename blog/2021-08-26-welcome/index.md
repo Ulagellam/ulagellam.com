@@ -1,7 +1,7 @@
 ---
 slug: welcome
 title: Welcome
-authors: [yogi, uma]
+authors: [sivayogeith, uma]
 tags: [facebook, hello, docusaurus]
 ---
 

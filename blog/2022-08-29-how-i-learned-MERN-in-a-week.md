@@ -1,15 +1,13 @@
 ---
 slug: mern
 title: How I learned MERN in a week!
-authors: yogi
+authors: sivayogeith
 tags: [mern, angular, mongodb, express, nodejs]
 ---
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor vitae ex nec tristique. Cras sagittis ante in tellus fermentum condimentum. Integer vehicula, tellus quis ultrices volutpat, eros metus rhoncus dui, a vulputate velit purus vitae magna. Nam non mi mattis, lobortis lorem nec, volutpat augue. Nulla placerat varius placerat. Donec id volutpat magna. Duis nec volutpat lectus. Duis sapien ipsum, sodales in ex nec, vulputate consectetur nisl. Donec commodo nunc velit, eget dapibus eros molestie sed. Ut congue lacus eu nibh viverra lacinia sed at orci. Curabitur vitae consequat dui. Maecenas ut hendrerit lectus, id semper risus. Etiam tellus nunc, dictum sed nulla et, posuere scelerisque odio.
 
 Mauris ante erat, elementum id eros vitae, pulvinar tempor ex. Duis tincidunt augue nec mauris dapibus mattis. Proin at faucibus risus, at vehicula neque. Donec ac pretium enim, vel aliquam lectus. Morbi sagittis erat vel dolor laoreet, ornare auctor diam fermentum. Etiam et mollis turpis. In sed magna eget mauris lobortis elementum in a leo.
-
 
 Fusce pharetra dui sit amet erat cursus tincidunt. Vivamus lacinia diam sit amet neque dapibus dapibus. Donec sit amet sem et mauris interdum maximus. Mauris porta, quam in porttitor elementum, diam libero porta dolor, in laoreet ipsum ante vitae justo. Curabitur posuere at tellus sed dapibus. Pellentesque ullamcorper quam eget massa facilisis, ac venenatis augue faucibus. Etiam fermentum diam tristique, aliquet ante nec, sagittis dui. Nunc condimentum posuere lobortis. Mauris tempor sodales felis, a mattis dolor scelerisque non. Pellentesque eros augue, aliquet vitae nisi vel, varius tempus arcu. Phasellus porta, nisi ut venenatis tempor, elit diam sagittis elit, non gravida eros lorem vel ante. Nulla at ex sed lorem sodales vestibulum. Nunc imperdiet placerat enim, quis tincidunt lacus euismod at. Nullam at nulla sit amet purus commodo blandit consequat sit amet ipsum. Pellentesque sagittis ex a est scelerisque sagittis.
 
