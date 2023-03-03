@@ -1,4 +1,4 @@
-yogi:
+sivayogeith:
   name: Sivayogeith Umamaheswaran
   title: CTO, Ulagellam
   url: https://github.com/sivayogeith
@@ -8,7 +8,13 @@ uma:
   name: Umamaheswaran TG
   title: Chairman, Ulagellam
   url: https://github.com/h2i
-  image_url: https://github.com/h2i.png
+  image_url: /img/uma.jpg
+
+sivasweatha:
+  name: Sivasweatha Umamaheswaran
+  title: CFO, Ulagellam
+  url: https://github.com/sivasweatha
+  image_url: /img/sivasweatha.jpg
 
 chitra:
   name: Chitra Umamaheswaran
