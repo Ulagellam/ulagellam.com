@@ -2,24 +2,15 @@
 slug: welcome
 title: Welcome
 authors: [sivayogeith, uma]
-tags: [facebook, hello, docusaurus]
+tags: [lorem, ipsum]
 ---
 
-[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at felis eget nisl bibendum feugiat. Nulla vel urna lacus.
 
-Simply add Markdown files (or folders) to the `blog` directory.
+Praesent varius ipsum eu libero semper, id efficitur orci varius. Donec sollicitudin est in quam ultrices, at accumsan leo malesuada. 
 
-Regular blog authors can be added to `authors.yml`.
+Integer dapibus elit leo, sed blandit quam ullamcorper vel. Sed faucibus dictum est, a sagittis lacus semper non. Vivamus tempor leo ex, ac aliquam tortor hendrerit a. Integer tristique elit id dapibus tempor. 
 
-The blog post date can be extracted from filenames, such as:
+Etiam semper est malesuada, viverra odio vitae, condimentum justo. Cras id ipsum eget mauris blandit condimentum et et purus. Mauris ornare enim ut sagittis malesuada. Sed semper diam ac commodo finibus. 
 
-- `2019-05-30-welcome.md`
-- `2019-05-30-welcome/index.md`
-
-A blog post folder can be convenient to co-locate blog post images:
-
-![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)
-
-The blog supports tags as well!
-
-**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config.
+Fusce hendrerit tortor sed justo faucibus commodo. Vivamus consectetur varius scelerisque. Aenean efficitur diam augue, nec posuere nulla ullamcorper eu.
