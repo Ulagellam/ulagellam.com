@@ -2,7 +2,7 @@
 slug: long-blog-post
 title: Long Blog Post
 authors: chitra
-tags: [hello, docusaurus]
+tags: [lorem, ipsum]
 ---
 
 This is the summary of a very long blog post,
