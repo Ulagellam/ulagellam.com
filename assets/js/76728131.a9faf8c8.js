@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkulagellam_docusaurus=self.webpackChunkulagellam_docusaurus||[]).push([[5017],{341:a=>{a.exports=JSON.parse('{"label":"ipsum","permalink":"/blog/tags/ipsum","allTagsPath":"/blog/tags","count":3}')}}]);

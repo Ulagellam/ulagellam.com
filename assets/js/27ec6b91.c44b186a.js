@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkulagellam_docusaurus=self.webpackChunkulagellam_docusaurus||[]).push([[1818],{7263:l=>{l.exports=JSON.parse('{"permalink":"/blog/tags/tip","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
