@@ -106,7 +106,7 @@ export default function AboutUs() {
           <div className="col col--3">
             <div style={{ "text-align": "center" }}>
               <img
-                src="https://github.com/sivayogeith.png"
+                src="/img/sivayogeith.jpg"
                 className={clsx(styles.photo)}
               ></img>
               <h1>Sivayogeith Umamaheswaran</h1>

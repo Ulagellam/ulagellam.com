@@ -2,37 +2,46 @@ import React from "react";
 import Layout from "@theme/Layout";
 
 export default function Research() {
-    return (
-        <Layout
-            title="R&amp;D"
-            description="Research and Devlopment | Ulagellam"
-        >
-            <div
-                className="container"
-                // style={{
-                //     //   justifyContent: 'center',
-                //     // alignItems: 'center',
-                //     textAlign: 'center',
-                //     //   height: '50vh',
-                // }}
-            >
-                <div className="row ">
-                <hr></hr>
-                    <div>
-                        <h1 className='text--center'>Helmet</h1>
-                        <p className='text--center'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis nulla, sodales ac metus id, fermentum semper leo. Sed porta, neque pulvinar fermentum dignissim, augue metus viverra ligula, sed ullamcorper arcu justo eu libero. Pellentesque sit amet erat at mi consectetur pulvinar vestibulum sed libero. Integer ultrices massa non sem tempor condimentum. Aenean volutpat libero sed ligula luctus mollis. Sed finibus nec mi vitae lacinia. In hac habitasse platea dictumst. Nullam id rhoncus tellus, ac eleifend lorem. Nunc scelerisque sapien a velit consectetur, molestie maximus augue vulputate. Quisque a iaculis erat. Suspendisse condimentum, augue at commodo molestie, dui leo sagittis lorem, in pulvinar libero arcu quis diam. Nullam facilisis cursus felis eget tincidunt. Morbi accumsan commodo erat a imperdiet. Sed ultrices euismod consectetur. Sed tempus dolor sit amet metus hendrerit, at placerat neque aliquet.
-                        </p>
-                    </div>
-                    <hr></hr>
-                    <div>
-                        <h1 className='text--center'>Lorem Ipusm</h1>
-                        <p className='text--center'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis nulla, sodales ac metus id, fermentum semper leo. Sed porta, neque pulvinar fermentum dignissim, augue metus viverra ligula, sed ullamcorper arcu justo eu libero. Pellentesque sit amet erat at mi consectetur pulvinar vestibulum sed libero. Integer ultrices massa non sem tempor condimentum. Aenean volutpat libero sed ligula luctus mollis. Sed finibus nec mi vitae lacinia. In hac habitasse platea dictumst. Nullam id rhoncus tellus, ac eleifend lorem. Nunc scelerisque sapien a velit consectetur, molestie maximus augue vulputate. Quisque a iaculis erat. Suspendisse condimentum, augue at commodo molestie, dui leo sagittis lorem, in pulvinar libero arcu quis diam. Nullam facilisis cursus felis eget tincidunt. Morbi accumsan commodo erat a imperdiet. Sed ultrices euismod consectetur. Sed tempus dolor sit amet metus hendrerit, at placerat neque aliquet.</p>
-                    </div>
-                    <hr></hr>
-                </div>
-            </div>
-        </Layout>
-    );
+	return (
+		<Layout
+			title="R&amp;D"
+			description="Research and Devlopment | Ulagellam"
+		>
+			<div className="container">
+				<h1>Research & Devlopment</h1>
+				<div className="row">
+					<div className="col col--12">
+						<h2>Helmet</h2>
+						<p>
+							Our machine learning helmet project aims to use
+							computer vision and machine learning techniques to
+							determine whether a person riding a bike is wearing
+							a helmet or not. By analyzing video footage from
+							cameras mounted nearby, the system can detect the
+							presence of a helmet on the rider's head and make a
+							determination about whether they are wearing one.
+							The system is trained on a dataset of images and
+							videos of people riding bikes, both with and without
+							helmets, to learn the distinctive features of
+							helmets and the absence of them.
+						</p>
+						<p>
+							The goal of this project is to promote safety and
+							encourage the use of helmets while riding bikes.
+							This technology can be used in a variety of settings
+							such as traffic monitoring, bike-sharing systems,
+							and personal safety applications. With the help of
+							this technology, it can reduce the number of
+							accidents and promote safety. Furthermore, the
+							system can also be integrated with other
+							technologies such as GPS, to track the location of
+							helmet usage and areas where helmet usage is low,
+							which can help authorities to create targeted
+							awareness campaigns.
+						</p>
+					</div>
+				</div>
+			</div>
+		</Layout>
+	);
 }
