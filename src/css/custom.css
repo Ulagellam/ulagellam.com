@@ -40,3 +40,7 @@
 	filter: blur(0);
 	transform: translateX(0);
 }
+.markdown > p > img {
+	border: 1px solid var(--ifm-color-primary-lightest);
+	border-radius: 5px;
+}

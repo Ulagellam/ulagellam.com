@@ -6,6 +6,8 @@ tags: [react, video, vite]
 enableComments: true
 ---
 
+![My Present to my Sister](./blog-images/my-present.png)
+
 ## Introduction
 
 I recently learned React, one of the most popular JavaScript frameworks in the
