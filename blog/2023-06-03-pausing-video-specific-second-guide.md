@@ -3,10 +3,15 @@ slug: pausing-video-specific-second-guide
 title: How to Pause a Video at a Specific Second
 authors: sivayogeith
 tags: [react, video, vite]
+image: ./blog-images/my-present.png
+description:
+    In this tutorial, we covered how to add a video to a React component using
+    the <video> tag, how to use refs to reference the video element, and how to
+    access and control the video using the ref.
 enableComments: true
 ---
 
-![My Present to my Sister](./blog-images/my-present.png)
+![My present to my sister](./blog-images/my-present.png)
 
 ## Introduction
 

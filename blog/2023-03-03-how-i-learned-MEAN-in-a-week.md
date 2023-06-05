@@ -3,6 +3,9 @@ slug: how-i-learned-MEAN-in-a-week
 title: How I learned MEAN in a week!
 authors: sivayogeith
 tags: [mean, angular, mongodb, express, nodejs]
+image: ./blog-images/mean-stack.jpeg
+description: Learning MEAN stack development in a week was a challenging but rewarding
+experience.
 enableComments: true
 ---
 
