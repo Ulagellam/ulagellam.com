@@ -12,8 +12,8 @@
         <id>pausing-video-specific-second-guide</id>
         <link href="http://ulagellam.com/blog/pausing-video-specific-second-guide"/>
         <updated>2023-06-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[My Present to my Sister]]></summary>
-        <content type="html"><![CDATA[<p><img loading="lazy" alt="My Present to my Sister" src="/assets/images/my-present-ca2ef3161afbd85e96dfcea8a74ac5f3.png" width="1070" height="754" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a class="hash-link" href="#introduction" title="Direct link to heading">​</a></h2><p>I recently learned React, one of the most popular JavaScript frameworks in the
+        <summary type="html"><![CDATA[In this tutorial, we covered how to add a video to a React component using the <video> tag, how to use refs to reference the video element, and how to access and control the video using the ref.]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" alt="My present to my sister" src="/assets/images/my-present-ca2ef3161afbd85e96dfcea8a74ac5f3.png" width="1070" height="754" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a class="hash-link" href="#introduction" title="Direct link to heading">​</a></h2><p>I recently learned React, one of the most popular JavaScript frameworks in the
 world. I also created a gift for my sister using React. The main feature of the
 present is a video that contains a rickroll. When the rickroll plays, it should
 enable a previously disabled button.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="getting-started">Getting Started<a class="hash-link" href="#getting-started" title="Direct link to heading">​</a></h2><div class="theme-admonition theme-admonition-caution alert alert--warning admonition_LlT9"><div class="admonitionHeading_tbUL"><span class="admonitionIcon_kALy"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_S0QG"><p>Note: This tutorial assumes you have a react-ts or react app with vite included.
@@ -55,7 +55,7 @@ and control the video using the ref.</p><p>I hope this tutorial has been helpful
         <id>how-i-learned-MEAN-in-a-week</id>
         <link href="http://ulagellam.com/blog/how-i-learned-MEAN-in-a-week"/>
         <updated>2023-03-03T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[MEAN Stack]]></summary>
+        <summary type="html"><![CDATA[Learning MEAN stack development in a week was a challenging but rewarding experience.]]></summary>
         <content type="html"><![CDATA[<p><img loading="lazy" alt="MEAN Stack" src="/assets/images/mean-stack-2f830e9f890da1fd7a6f26c32a794afa.jpeg" width="1024" height="768" class="img_ev3q"></p><p>As a developer with some experience in Node.js and Angular, I was interested in
 learning how to build full-stack applications using the MEAN stack. So, I set
 out to learn it in a week, and to my surprise, I was able to pick it up
