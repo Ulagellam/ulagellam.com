@@ -4,7 +4,7 @@
         <title>Ulagellam Blog</title>
         <link>http://ulagellam.com/blog</link>
         <description>Ulagellam Blog</description>
-        <lastBuildDate>Sat, 03 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 04 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[How to Pause a Video at a Specific Second]]></title>
             <link>http://ulagellam.com/blog/pausing-video-specific-second-guide</link>
             <guid>pausing-video-specific-second-guide</guid>
-            <pubDate>Sat, 03 Jun 2023 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 04 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[In this tutorial, we covered how to add a video to a React component using the <video> tag, how to use refs to reference the video element, and how to access and control the video using the ref.]]></description>
             <content:encoded><![CDATA[<p><img loading="lazy" alt="My present to my sister" src="/assets/images/my-present-ca2ef3161afbd85e96dfcea8a74ac5f3.png" width="1070" height="754" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a class="hash-link" href="#introduction" title="Direct link to heading">​</a></h2><p>I recently learned React, one of the most popular JavaScript frameworks in the
 world. I also created a gift for my sister using React. The main feature of the
