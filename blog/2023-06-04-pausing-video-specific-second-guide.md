@@ -36,7 +36,7 @@ You can include a video using the HTML `<video>` tag.
 
 Here's an example:
 
-```tsx
+```tsx title="/src/App.tsx" showLineNumbers
 import rickRoll from "./rickroll.mp4";
 import "./App.css";
 
@@ -67,7 +67,7 @@ In React, using refs is considered a best practice instead of directly using
 
 Let's add refs to our video tag:
 
-```tsx
+```tsx title="/src/App.tsx" showLineNumbers
 import { createRef } from "react";
 import rickRoll from "./rickroll.mp4";
 import "./App.css";
@@ -109,7 +109,7 @@ might be null initially.
 
 ## Step 3. Adding `onTimeUpdate`
 
-The `<video>` tag in HTML has an attribute called onTimeUpdate which allows us
+The `<video>` tag in HTML has an attribute called `onTimeUpdate` which allows us
 to set a function that will be called whenever the timestamp in the video
 changes.
 
@@ -135,20 +135,95 @@ const handleTimeUpdate = () => {
 };
 ```
 
+And in the HTML you need to add the `onTimeUpdate` attribute:
+
+```tsx
+<video
+	src={rickRoll}
+	width="750"
+	height="500"
+	ref={videoRef}
+	onTimeUpdate={handleTimeUpdate}
+	controls
+></video>
+```
+
+By stitching all that code, we get the final result,
+
+```tsx title="/src/App.tsx" showLineNumbers
+import { useState, createRef } from "react";
+import rickRoll from "/rickroll.mp4";
+import "./App.css";
+
+function App() {
+	const targetTimestamp = 6;
+	const [timestamp, setTimestamp] = useState(0);
+	const [didRickRollCome, setDidRickRollCome] = useState(false);
+
+	const videoRef = createRef<HTMLVideoElement>();
+	const handleTimeUpdate = () => {
+		const currentTime = videoRef.current?.currentTime || 0;
+		setTimestamp(currentTime);
+		if (currentTime >= targetTimestamp && !didRickRollCome) {
+			onTimestamp();
+		}
+	};
+
+	const onTimestamp = () => {
+		// When the timestamp is at 6 seconds do this:
+		videoRef.current?.pause();
+		setDidRickRollCome(true);
+	};
+	return (
+		<>
+			<div>
+				<p>The Video is at {timestamp} seconds</p>
+				{didRickRollCome ? (
+					<p>Passed {targetTimestamp} seconds!</p>
+				) : null}
+				<video
+					src={rickRoll}
+					width="750"
+					height="500"
+					ref={videoRef}
+					onTimeUpdate={handleTimeUpdate}
+					controls
+				></video>
+			</div>
+		</>
+	);
+}
+
+export default App;
+```
+
+:::note
+
+I have added this code so it will show the current timestamp and if it touched
+the `targetTimestamp` var in the UI:
+
+```
+<p>The Video is at {timestamp} seconds</p>;
+{
+	didRickRollCome ? <p>Passed {targetTimestamp} seconds!</p> : null;
+}
+```
+
+:::
+
 The `handleTimeUpdate` function retrieves the current timestamp from
 `videoRef.current?.currentTime` with a default value of 0. It updates the
 timestamp state with `setTimestamp(currentTime)`.
 
 If the current timestamp is at least the target timestamp and the Rickroll
-hasn't occurred (`!didRickRollCome`), it pauses the video
-(`videoRef.current.pause()`) and sets `didRickRollCome` to true
-(`setDidRickRollCome(true)`).
+hasn't occurred, it pauses the video with and sets `didRickRollCome` to true
 
 ## Extra Step (If you are using React with JS)
 
 In Step 2, you will need to change this:
 
 ```tsx
+// Line No. 6
 const videoRef = createRef<HTMLVideoElement>();
 ```
 
@@ -158,9 +233,9 @@ to
 const videoRef = createRef();
 ```
 
-When using React with JavaScript, you should omit the type argument
-(`<HTMLVideoElement>`) when creating the ref. The createRef() function can be
-used without specifying the element type.
+We are doing that as, Javascript does not support types.
+
+Also, the file extension should be `.jsx` instead of `.tsx`
 
 # Results
 
@@ -180,4 +255,9 @@ In this tutorial, we covered how to add a video to a React component using the
 `<video>` tag, how to use refs to reference the video element, and how to access
 and control the video using the ref.
 
-I hope this tutorial has been helpful in your React journey! Happy coding!
+I hope this tutorial has been helpful in your React journey!
+
+And If you want to see the present I gave to my sister, give me an DM on Discord
+([thecodingsage#8758](https://discord.com/users/1061949717833068607))
+
+Happy coding!
