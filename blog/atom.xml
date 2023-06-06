@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://ulagellam.com/blog</id>
+    <id>https://ulagellam.com/blog</id>
     <title>Ulagellam Blog</title>
     <updated>2023-06-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://ulagellam.com/blog"/>
+    <link rel="alternate" href="https://ulagellam.com/blog"/>
     <subtitle>Ulagellam Blog</subtitle>
-    <icon>http://ulagellam.com/img/favicon.png</icon>
+    <icon>https://ulagellam.com/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[How to Pause a Video at a Specific Second]]></title>
         <id>pausing-video-specific-second-guide</id>
-        <link href="http://ulagellam.com/blog/pausing-video-specific-second-guide"/>
+        <link href="https://ulagellam.com/blog/pausing-video-specific-second-guide"/>
         <updated>2023-06-04T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In this tutorial, we covered how to add a video to a React component using the <video> tag, how to use refs to reference the video element, and how to access and control the video using the ref.]]></summary>
         <content type="html"><![CDATA[<p><img loading="lazy" alt="My present to my sister" src="/assets/images/my-present-ca2ef3161afbd85e96dfcea8a74ac5f3.png" width="1070" height="754" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a class="hash-link" href="#introduction" title="Direct link to heading">​</a></h2><p>I recently learned React, one of the most popular JavaScript frameworks in the
@@ -51,7 +51,7 @@ and control the video using the ref.</p><p>I hope this tutorial has been helpful
     <entry>
         <title type="html"><![CDATA[How I learned MEAN in a week!]]></title>
         <id>how-i-learned-MEAN-in-a-week</id>
-        <link href="http://ulagellam.com/blog/how-i-learned-MEAN-in-a-week"/>
+        <link href="https://ulagellam.com/blog/how-i-learned-MEAN-in-a-week"/>
         <updated>2023-03-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Learning MEAN stack development in a week was a challenging but rewarding experience.]]></summary>
         <content type="html"><![CDATA[<p><img loading="lazy" alt="MEAN Stack" src="/assets/images/mean-stack-2f830e9f890da1fd7a6f26c32a794afa.jpeg" width="1024" height="768" class="img_ev3q"></p><p>As a developer with some experience in Node.js and Angular, I was interested in

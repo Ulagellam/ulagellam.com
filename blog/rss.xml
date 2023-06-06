@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Ulagellam Blog</title>
-        <link>http://ulagellam.com/blog</link>
+        <link>https://ulagellam.com/blog</link>
         <description>Ulagellam Blog</description>
         <lastBuildDate>Sun, 04 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[How to Pause a Video at a Specific Second]]></title>
-            <link>http://ulagellam.com/blog/pausing-video-specific-second-guide</link>
+            <link>https://ulagellam.com/blog/pausing-video-specific-second-guide</link>
             <guid>pausing-video-specific-second-guide</guid>
             <pubDate>Sun, 04 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[In this tutorial, we covered how to add a video to a React component using the <video> tag, how to use refs to reference the video element, and how to access and control the video using the ref.]]></description>
@@ -47,7 +47,7 @@ and control the video using the ref.</p><p>I hope this tutorial has been helpful
         </item>
         <item>
             <title><![CDATA[How I learned MEAN in a week!]]></title>
-            <link>http://ulagellam.com/blog/how-i-learned-MEAN-in-a-week</link>
+            <link>https://ulagellam.com/blog/how-i-learned-MEAN-in-a-week</link>
             <guid>how-i-learned-MEAN-in-a-week</guid>
             <pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Learning MEAN stack development in a week was a challenging but rewarding experience.]]></description>
