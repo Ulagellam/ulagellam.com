@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
 	title: "Ulagellam",
 	tagline: "Products beyond boundaries!",
-	url: "http://ulagellam.com",
+	url: "https://ulagellam.com",
 	baseUrl: "/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
