@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkulagellam_docusaurus=self.webpackChunkulagellam_docusaurus||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"How to Pause a Video at a Specific Second","permalink":"/blog/pausing-video-specific-second-guide"},{"title":"How I learned MEAN in a week!","permalink":"/blog/how-i-learned-MEAN-in-a-week"}]}')}}]);
