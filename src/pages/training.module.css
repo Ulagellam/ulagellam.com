@@ -1,11 +1,13 @@
-.right {
-	padding: 7px;
-	border-left: solid 1px black;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.img {
+  width: 50rem;
+  height: auto;
+  border-radius: 4rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 0;
 }
-.left {
-	width: 50%;
-	float: left;
-}
-.wrapperClass {
-	height: 100vh;
+
+.img_div {
+  padding: 10px;
 }

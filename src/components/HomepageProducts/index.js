@@ -1,36 +1,25 @@
-import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 import Link from "@docusaurus/Link";
 
 const ProductList = [
   {
-    title: "Facial Recognition",
-    src: "/img/favicon-placeholder.png",
+    src: "/img/neetling.png",
+    title: "Neetling",
+    circle: true,
+    hyperlink: "https://neetling.com",
     description: (
       <>
-        Facial recognition technology uses artificial intelligence to identify
-        and verify individuals. It has many applications in security,
-        biometrics, and personal device unlocking.
+        Join the world’s first NEET prep platform with science-backed learning
+        methods to ace the exam and crush the competition.
       </>
     ),
-    link: "#facialrecognition",
-  },
-  {
-    title: "Attendance with RFID",
-    src: "/img/favicon-placeholder.png",
-    description: (
-      <>
-        We developed an RFID-based attendance system for accurate and effortless
-        tracking of employee attendance, eliminating the need for manual
-        tracking in organizations and schools.
-      </>
-    ),
-    link: "#rfid",
+    link: "#neetling",
   },
   {
     title: "Money Maker",
-    src: "/img/favicon-placeholder.png",
+    src: "/img/moneymaker.png",
+    circle: true,
     description: (
       <>
         Our upcoming project, Money Maker, is an automated trading system
@@ -40,16 +29,60 @@ const ProductList = [
     ),
     link: "#moneymaker",
   },
+  {
+    title: "Facial Recognition",
+    src: "/img/facial-reco.png",
+    darkSrc: "/img/facial-reco-white.png",
+    circle: false,
+    description: (
+      <>
+        Facial recognition technology uses artificial intelligence to identify
+        and verify individuals. It has many applications in security,
+        biometrics, and personal device unlocking.
+      </>
+    ),
+    link: "#facialrecognition",
+  },
 ];
 
-function Product({ src, title, description, link }) {
+function Product({
+  src,
+  title,
+  description,
+  link,
+  hyperlink,
+  circle,
+  darkSrc,
+}) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img className={clsx(styles.productSvg)} role="img" src={src} />
+        <img
+          className={clsx(
+            circle ? styles.circle : darkSrc ? "display" : "",
+            styles.productSvg
+          )}
+          role="img"
+          src={src}
+        />
+        {darkSrc ? (
+          <img
+            className={clsx("display-dark", styles.productSvg)}
+            role="img"
+            src={darkSrc}
+          />
+        ) : null}
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3>
+          {hyperlink ? (
+            <a href={hyperlink} target="_blank">
+              {title}
+            </a>
+          ) : (
+            title
+          )}
+        </h3>
         <p>
           {description}
           <br></br>

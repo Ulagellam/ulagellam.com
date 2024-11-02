@@ -29,6 +29,8 @@ Before I started learning MEAN, I already had experience with Node.js and
 Angular, but I was not familiar with HttpClient. So, I had a good grasp of
 JavaScript and TypeScript.
 
+{/* truncate */}
+
 # The Learning Process
 
 I started by reading the documentation for each technology and watching video

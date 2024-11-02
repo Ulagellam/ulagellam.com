@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require("prism-react-renderer").themes.github;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -63,11 +63,6 @@ const config = {
 						label: "Products",
 					},
 					{
-						to: "/services",
-						position: "right",
-						label: "Services",
-					},
-					{
 						to: "/training",
 						position: "right",
 						label: "Training",
@@ -92,11 +87,15 @@ const config = {
 
 							{
 								label: "Linkedin",
-								href: "https://www.linkedin.com/in/umamaheswarantg",
+								href: "https://www.linkedin.com/company/ulagellam-pvt-ltd/",
 							},
 							{
 								label: "Youtube",
-								href: "https://www.youtube.com/channel/UClind4orH7yfe0Qp9bzm6ug",
+								href: "https://www.youtube.com/@ulagellamtech",
+							},
+							{
+								label: "Instagram",
+								href: "https://www.instagram.com/ulagellam_tech/",
 							},
 						],
 					},
@@ -119,10 +118,6 @@ const config = {
 							{
 								label: "Email: business@ulagellam.com",
 								to: "mailto:business@ulagellam.com",
-							},
-							{
-								label: "Phone: +91 8667688027",
-								to: "tel:+918667688027",
 							},
 						],
 					},

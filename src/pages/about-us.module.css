@@ -4,19 +4,6 @@
   width: 270px;
 }
 
-[data-theme="dark"] .logo_dark {
-  display: block;
-}
-[data-theme="dark"] .logo {
-  display: none;
-}
-[data-theme="light"] .logo_dark {
-  display: none;
-}
-[data-theme="light"] .logo {
-  display: block;
-}
-
 .logo_parent {
   text-align: center;
 }

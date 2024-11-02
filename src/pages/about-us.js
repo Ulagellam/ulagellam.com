@@ -1,128 +1,143 @@
-import React from "react";
 import Layout from "@theme/Layout";
 import styles from "./about-us.module.css";
 import clsx from "clsx";
 
+const teamMembers = [
+  {
+    name: "Umamaheswaran",
+    title: "Chairman, Ulagellam",
+    image: "/img/uma.jpg",
+    description: (
+      <>
+        With over 25 years in software and experience at Citi Japan, Wells
+        Fargo, Yahoo and Apple, plus 6 years in academics and personality
+        development, Uma blends technical expertise with a dedication to
+        mentorship.
+        <br></br>
+        <br></br>
+        Passionate about emerging tech, he brings innovation and insight to
+        everything from software development to inspiring future talent.
+      </>
+    ),
+  },
+  {
+    name: "Chitra Umamaheswaran",
+    title: "CEO, Ulagellam",
+    image: "/img/chitra.jpg",
+    description: (
+      <>
+        Chitra is a commerce graduate driven by passion for business and
+        entrepreneurship. A proud mother of two, she skillfully balances her
+        family life with her creative pursuits. As a Tamil poet, Chitra draws on
+        her heritage to infuse her writing with depth and authenticity.
+        <br></br>
+        <br></br>
+        Her dedication to both family and career showcases her vibrant,
+        multifaceted approach to life.
+      </>
+    ),
+  },
+  {
+    name: "Sivasweatha Umamaheswaran",
+    title: "CEO, Neetling",
+    image: "/img/sivasweatha.jpg",
+    description: (
+      <>
+        Sivasweatha was an NIOS student who embraced open schooling after
+        returning to India from California, preferring hands-on learning without
+        external help.
+        <br></br>
+        <br></br>A self-taught Java and Python developer with strong leadership
+        skills, she is passionate about problem-solving, Data Structures and
+        Algorithms, with a keen focus on refining her skills in time and space
+        complexity.
+      </>
+    ),
+  },
+  {
+    name: "Sivayogeith Umamaheswaran",
+    title: "CTO, Ulagellam",
+    image: "/img/sivayogeith.jpg",
+    description: (
+      <>
+        Thirteen-year-old Sivayogeith has a passion for coding and for
+        supporting Ulagellam. He began learning Java at the age of 8, inspired
+        by his father, who nurtured his early interest in technology. He is also
+        the developer of Neetling.
+        <br></br>
+        <br></br>
+        Sivayogeith has a love for Angular, frontend, and full stack
+        development, and he is a content creator. And when he’s not coding, you
+        can find him hanging out with his beloved cats!
+      </>
+    ),
+  },
+];
+
+const Section = ({ title, children }) => (
+  <div className="col col--12">
+    <h1>{title}</h1>
+    <p>{children}</p>
+  </div>
+);
+
+const TeamMember = ({ name, title, image, description }) => (
+  <div className="col col--3">
+    <div style={{ textAlign: "center" }}>
+      <img src={image} className={clsx(styles.photo)} alt={`${name} photo`} />
+      <h1>{name}</h1>
+      <span>{title}</span>
+    </div>
+    <hr />
+    <p className={clsx(styles.i)}>{description}</p>
+  </div>
+);
+
 export default function AboutUs() {
   return (
     <Layout title="About Us" description="About Us | Ulagellam">
-      <br></br>
+      <br />
       <div className="container">
         <div className="row">
-          <hr></hr>
-          <div className="col col--12">
-            <div class="text--center">
-              <img
-                src="img/ulagellam-logo.png"
-                className={clsx(styles.logo)}
-              ></img>
-              <img
-                src="img/ulagellam-logo-dark.png"
-                className={clsx(styles.logo_dark)}
-              ></img>
-            </div>
-            <br></br>
+          <div className="col col--12 text--center">
+            <img
+              src="img/ulagellam-logo.png"
+              className={clsx("display", styles.logo)}
+              alt="Ulagellam logo"
+            />
+            <img
+              src="img/ulagellam-logo-dark.png"
+              className={clsx("display-dark", styles.logo_dark)}
+              alt="Ulagellam dark logo"
+            />
+            <br />
             <p>
-              At Ulagellam we are trying to create cost effective products that
-              can help small to enterprise level businesses. Right now we are
-              self funded. In future we will be going for funding outside.
+              At Ulagellam, we are trying to create cost-effective products that
+              can help small to enterprise-level businesses. Right now, we are
+              self-funded. In the future, we will seek external funding.
             </p>
           </div>
-          <div className="col col--12">
-            <h1>Mission</h1>
-            <p>
-              We will develop cost effective software/hardware products to
-              fulfil the needs of common man and for businesses to achieve
-              automation as much as possible through our cutting edge technology
-              products.
-            </p>
-          </div>
-          <div className="col col--12">
-            <h1>Vision</h1>
-            <p>
-              Bring in world class software technology adoption to rural areas
-              of Tamil Nadu and all over India through our products, services
-              &amp; training.
-            </p>
-          </div>
+          <Section title="Mission">
+            We will develop cost-effective software/hardware products to fulfill
+            the needs of the common man and for businesses to achieve automation
+            as much as possible through our cutting-edge technology products.
+          </Section>
+          <Section title="Vision">
+            Bring world-class software technology adoption to rural areas of
+            Tamil Nadu and all over India through our products, services &amp;
+            training.
+          </Section>
         </div>
-        <hr></hr>
+        <hr />
       </div>
       <div className="container">
         <div className="row">
-          <div className="col col--3">
-            <div style={{ "text-align": "center" }}>
-              <img src="/img/uma.jpg" className={clsx(styles.photo)}></img>
-              <h1>
-                Umamaheswaran <br></br> TG
-              </h1>
-              <span>Chairman, Ulagellam</span>
-            </div>
-            <hr></hr>
-            <p className={clsx(styles.i)}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              felis nulla, sodales ac metus id, fermentum semper leo. Sed porta,
-              neque pulvinar fermentum dignissim, augue metus viverra ligula,
-              sed ullamcorper arcu justo eu libero.
-            </p>
-          </div>
-          <div className="col col--3">
-            <div style={{ "text-align": "center" }}>
-              <img src="/img/chitra.jpg" className={clsx(styles.photo)}></img>
-              <h1>
-                Chitra <br></br> Umamaheswaran
-              </h1>
-              <span>CEO, Ulagellam</span>
-            </div>
-
-            <hr></hr>
-            <p className={clsx(styles.i)}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              felis nulla, sodales ac metus id, fermentum semper leo. Sed porta,
-              neque pulvinar fermentum dignissim, augue metus viverra ligula,
-              sed ullamcorper arcu justo eu libero.
-            </p>
-          </div>
-          <div className="col col--3">
-            <div style={{ "text-align": "center" }}>
-              <img
-                src="/img/sivasweatha.jpg"
-                className={clsx(styles.photo)}
-              ></img>
-              <h1>
-                Sivasweatha <br></br> Umamaheswaran
-              </h1>
-              <span>CFO, Ulagellam</span>
-            </div>
-
-            <hr></hr>
-            <p className={clsx(styles.i)}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              felis nulla, sodales ac metus id, fermentum semper leo. Sed porta,
-              neque pulvinar fermentum dignissim, augue metus viverra ligula,
-              sed ullamcorper arcu justo eu libero.
-            </p>
-          </div>
-          <div className="col col--3">
-            <div style={{ "text-align": "center" }}>
-              <img
-                src="/img/sivayogeith.jpg"
-                className={clsx(styles.photo)}
-              ></img>
-              <h1>Sivayogeith Umamaheswaran</h1>
-              <span>CTO, Ulagellam</span>
-            </div>
-            <hr></hr>
-            <p className={clsx(styles.i)}>
-              I love to Code as much I love to help Ulagellam! My Father
-              &#40;The Chairman&#41; taught me how to code in Java when I was 8,
-              that was when I fell in love with Coding. When I started showing a
-              lot of progress, he made me the CTO of his company....Ulagellam!
-            </p>
-          </div>
+          {teamMembers.map((member, index) => (
+            <TeamMember key={index} {...member} />
+          ))}
         </div>
       </div>
-      <br></br>
+      <br />
     </Layout>
   );
 }

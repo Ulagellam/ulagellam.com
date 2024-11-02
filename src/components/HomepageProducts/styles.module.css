@@ -8,6 +8,9 @@
 .productSvg {
   height: 200px;
   width: 200px;
+}
+
+.circle {
   border-radius: 1000px;
 }
 

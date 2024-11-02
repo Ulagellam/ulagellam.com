@@ -5,9 +5,9 @@ authors: sivayogeith
 tags: [react, video, vite]
 image: ./blog-images/my-present.png
 description:
-    In this tutorial, we covered how to add a video to a React component using
-    the <video> tag, how to use refs to reference the video element, and how to
-    access and control the video using the ref.
+  In this tutorial, we covered how to add a video to a React component using
+  the <video> tag, how to use refs to reference the video element, and how to
+  access and control the video using the ref.
 enableComments: true
 ---
 
@@ -19,6 +19,8 @@ I recently learned React, one of the most popular JavaScript frameworks in the
 world. I also created a gift for my sister using React. The main feature of the
 present is a video that contains a rickroll. When the rickroll plays, it should
 enable a previously disabled button.
+
+{/* truncate */}
 
 ## Getting Started
 
@@ -41,13 +43,13 @@ import rickRoll from "./rickroll.mp4";
 import "./App.css";
 
 function App() {
-	return (
-		<>
-			<div>
-				<video src={rickRoll} width="750" height="500" controls></video>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div>
+        <video src={rickRoll} width="750" height="500" controls></video>
+      </div>
+    </>
+  );
 }
 
 export default App;
@@ -73,21 +75,21 @@ import rickRoll from "./rickroll.mp4";
 import "./App.css";
 
 function App() {
-	const videoRef = createRef<HTMLVideoElement>();
+  const videoRef = createRef<HTMLVideoElement>();
 
-	return (
-		<>
-			<div>
-				<video
-					src={rickRoll}
-					width="750"
-					height="500"
-					ref={videoRef}
-					controls
-				></video>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div>
+        <video
+          src={rickRoll}
+          width="750"
+          height="500"
+          ref={videoRef}
+          controls
+        ></video>
+      </div>
+    </>
+  );
 }
 
 export default App;
@@ -101,8 +103,8 @@ you can access the underlying DOM element using `videoRef.current`.
 
 To play or pause the video, you can use the following code:
 
--   Play: `videoRef.current?.play()`
--   Pause: `videoRef.current?.pause()`
+- Play: `videoRef.current?.play()`
+- Pause: `videoRef.current?.pause()`
 
 The ? is used to safely access the play() and pause() methods, as the current
 might be null initially.
@@ -126,12 +128,12 @@ Here is an example `handleTimeUpdate` function that we can use:
 
 ```tsx
 const handleTimeUpdate = () => {
-	const currentTime = videoRef.current?.currentTime || 0;
-	setTimestamp(currentTime);
-	if (currentTime >= targetTimestamp && !didRickRollCome) {
-		videoRef["current"].pause();
-		setDidRickRollCome(true);
-	}
+  const currentTime = videoRef.current?.currentTime || 0;
+  setTimestamp(currentTime);
+  if (currentTime >= targetTimestamp && !didRickRollCome) {
+    videoRef["current"].pause();
+    setDidRickRollCome(true);
+  }
 };
 ```
 
@@ -139,12 +141,12 @@ And in the HTML you need to add the `onTimeUpdate` attribute:
 
 ```tsx
 <video
-	src={rickRoll}
-	width="750"
-	height="500"
-	ref={videoRef}
-	onTimeUpdate={handleTimeUpdate}
-	controls
+  src={rickRoll}
+  width="750"
+  height="500"
+  ref={videoRef}
+  onTimeUpdate={handleTimeUpdate}
+  controls
 ></video>
 ```
 
@@ -156,42 +158,40 @@ import rickRoll from "/rickroll.mp4";
 import "./App.css";
 
 function App() {
-	const targetTimestamp = 6;
-	const [timestamp, setTimestamp] = useState(0);
-	const [didRickRollCome, setDidRickRollCome] = useState(false);
+  const targetTimestamp = 6;
+  const [timestamp, setTimestamp] = useState(0);
+  const [didRickRollCome, setDidRickRollCome] = useState(false);
 
-	const videoRef = createRef<HTMLVideoElement>();
-	const handleTimeUpdate = () => {
-		const currentTime = videoRef.current?.currentTime || 0;
-		setTimestamp(currentTime);
-		if (currentTime >= targetTimestamp && !didRickRollCome) {
-			onTimestamp();
-		}
-	};
+  const videoRef = createRef<HTMLVideoElement>();
+  const handleTimeUpdate = () => {
+    const currentTime = videoRef.current?.currentTime || 0;
+    setTimestamp(currentTime);
+    if (currentTime >= targetTimestamp && !didRickRollCome) {
+      onTimestamp();
+    }
+  };
 
-	const onTimestamp = () => {
-		// When the timestamp is at 6 seconds do this:
-		videoRef.current?.pause();
-		setDidRickRollCome(true);
-	};
-	return (
-		<>
-			<div>
-				<p>The Video is at {timestamp} seconds</p>
-				{didRickRollCome ? (
-					<p>Passed {targetTimestamp} seconds!</p>
-				) : null}
-				<video
-					src={rickRoll}
-					width="750"
-					height="500"
-					ref={videoRef}
-					onTimeUpdate={handleTimeUpdate}
-					controls
-				></video>
-			</div>
-		</>
-	);
+  const onTimestamp = () => {
+    // When the timestamp is at 6 seconds do this:
+    videoRef.current?.pause();
+    setDidRickRollCome(true);
+  };
+  return (
+    <>
+      <div>
+        <p>The Video is at {timestamp} seconds</p>
+        {didRickRollCome ? <p>Passed {targetTimestamp} seconds!</p> : null}
+        <video
+          src={rickRoll}
+          width="750"
+          height="500"
+          ref={videoRef}
+          onTimeUpdate={handleTimeUpdate}
+          controls
+        ></video>
+      </div>
+    </>
+  );
 }
 
 export default App;
