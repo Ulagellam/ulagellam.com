@@ -6,18 +6,13 @@ import HomepageProducts from "@site/src/components/HomepageProducts";
 
 import styles from "./index.module.css";
 
-import {
-  Webchat,
-  WebchatProvider,
-  Fab,
-  getClient,
-} from "@botpress/webchat";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 const clientId = "85e0e5f9-e99a-4822-bed9-b6511f418d61";
 
 const configuration = {
   float: "right",
-  showPoweredBy: false
+  showPoweredBy: false,
 };
 
 function HomepageHeader() {
@@ -33,16 +28,6 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const client = getClient({
-    clientId,
-  });
-
-  const [isWebchatOpen, setIsWebchatOpen] = useState(false);
-
-  const toggleWebchat = () => {
-    setIsWebchatOpen((prevState) => !prevState);
-  };
-
   return (
     <Layout
       title={`Home`}
@@ -63,21 +48,37 @@ export default function Home() {
           right: "50px",
         }}
       >
-        <WebchatProvider client={client} configuration={configuration}>
-          <div
-            style={{
-              display: isWebchatOpen ? "block" : "none",
-              height: "30rem",
-              "margin-bottom": "10px",
-            }}
-          >
-            <Webchat />
-          </div>
-          <Fab
-            onClick={toggleWebchat}
-            style={{float: "right"}}
-          />
-        </WebchatProvider>
+        <BrowserOnly fallback={<div>Loading...</div>}>
+          {() => {
+            const botpress = require("../../node_modules/@botpress/webchat");
+            
+            const [isWebchatOpen, setIsWebchatOpen] = useState(false);
+
+            const client = botpress.getClient({
+              clientId,
+            });
+
+
+            const toggleWebchat = () => {
+              setIsWebchatOpen((prevState) => !prevState);
+            };
+
+            return (
+              <botpress.WebchatProvider client={client} configuration={configuration}>
+                <div
+                  style={{
+                    display: isWebchatOpen ? "block" : "none",
+                    height: "30rem",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <botpress.Webchat />
+                </div>
+                <botpress.Fab onClick={toggleWebchat} style={{ float: "right" }} />
+              </botpress.WebchatProvider>
+            );
+          }}
+        </BrowserOnly>
       </div>
     </Layout>
   );
