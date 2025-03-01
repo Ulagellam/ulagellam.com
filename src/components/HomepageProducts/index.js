@@ -43,6 +43,17 @@ const ProductList = [
     ),
     link: "#facialrecognition",
   },
+  {
+    title: "Customer Support Chatbot Service",
+    src: "/img/chatbot.png",
+    circle: false,
+    description: (
+      <>
+        Wish to enhance your website with an AI chatbot for Customer Support? Available 24/7 to provide instant, accurate, and personalized support. Get your own AI chatbot today for just ₹5000!
+      </>
+    ),
+    link: "#chatbot-service",
+  },
 ];
 
 function Product({
@@ -55,7 +66,7 @@ function Product({
   darkSrc,
 }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col col--3")}>
       <div className="text--center">
         <img
           className={clsx(
@@ -96,7 +107,7 @@ function Product({
 export default function HomepageProducts() {
   return (
     <section className={styles.products}>
-      <div className={clsx("container", styles.box)}>
+      <div className={clsx("container-fluid", styles.box)}>
         <h1 className="text--center">Our Products</h1>
         <div className="row">
           {ProductList.map((props, idx) => (

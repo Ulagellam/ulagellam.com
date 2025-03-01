@@ -1,9 +1,24 @@
 import clsx from "clsx";
+import { useState } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageProducts from "@site/src/components/HomepageProducts";
 
 import styles from "./index.module.css";
+
+import {
+  Webchat,
+  WebchatProvider,
+  Fab,
+  getClient,
+} from "@botpress/webchat";
+
+const clientId = "85e0e5f9-e99a-4822-bed9-b6511f418d61";
+
+const configuration = {
+  float: "right",
+  showPoweredBy: false
+};
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,6 +33,16 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  const client = getClient({
+    clientId,
+  });
+
+  const [isWebchatOpen, setIsWebchatOpen] = useState(false);
+
+  const toggleWebchat = () => {
+    setIsWebchatOpen((prevState) => !prevState);
+  };
+
   return (
     <Layout
       title={`Home`}
@@ -29,6 +54,31 @@ export default function Home() {
       <main>
         <HomepageProducts />
       </main>
+      <div
+        style={{
+          width: "25rem",
+          margin: "5px",
+          position: "fixed",
+          bottom: "50px",
+          right: "50px",
+        }}
+      >
+        <WebchatProvider client={client} configuration={configuration}>
+          <div
+            style={{
+              display: isWebchatOpen ? "block" : "none",
+              height: "30rem",
+              "margin-bottom": "10px",
+            }}
+          >
+            <Webchat />
+          </div>
+          <Fab
+            onClick={toggleWebchat}
+            style={{float: "right"}}
+          />
+        </WebchatProvider>
+      </div>
     </Layout>
   );
 }

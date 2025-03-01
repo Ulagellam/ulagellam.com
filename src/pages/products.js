@@ -90,6 +90,26 @@ export default function Products() {
               and responsibly.
             </p>
           </div>
+          <div className="col col--12" id="chatbot-service">
+            <h2>Customer Support Chatbot Service</h2>
+            <p>
+              Wish to enhance your website with an AI chatbot for customer
+              support? With round-the-clock availability, it ensures instant,
+              accurate, and personalized assistance, improving user experience
+              and engagement.
+            </p>
+            <p>
+              Don’t miss out on the opportunity to boost efficiency and customer
+              satisfaction. Your AI chatbot works even at night, automating
+              responses, reducing wait times, and handling multiple queries
+              simultaneously with ease.
+            </p>
+            <p>
+              Get your own AI chatbot today for just ₹5000 and streamline your
+              customer interactions effortlessly. Upgrade your support system
+              and stay ahead with AI-powered convenience!
+            </p>
+          </div>
         </div>
       </div>
     </Layout>
