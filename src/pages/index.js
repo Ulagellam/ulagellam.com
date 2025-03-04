@@ -51,20 +51,30 @@ export default function Home() {
         <BrowserOnly fallback={<div>Loading...</div>}>
           {() => {
             const botpress = require("../../node_modules/@botpress/webchat");
-            
+
             const [isWebchatOpen, setIsWebchatOpen] = useState(false);
 
             const client = botpress.getClient({
               clientId,
             });
 
+            const detectMobile = () => {
+              return window.innerWidth <= 800;
+            };
 
             const toggleWebchat = () => {
+              if (detectMobile()) {
+                window.location = "https://bot.ulagellam.com"
+                return
+              }
               setIsWebchatOpen((prevState) => !prevState);
             };
 
             return (
-              <botpress.WebchatProvider client={client} configuration={configuration}>
+              <botpress.WebchatProvider
+                client={client}
+                configuration={configuration}
+              >
                 <div
                   style={{
                     display: isWebchatOpen ? "block" : "none",
@@ -74,7 +84,10 @@ export default function Home() {
                 >
                   <botpress.Webchat />
                 </div>
-                <botpress.Fab onClick={toggleWebchat} style={{ float: "right" }} />
+                <botpress.Fab
+                  onClick={toggleWebchat}
+                  style={{ float: "right" }}
+                />
               </botpress.WebchatProvider>
             );
           }}
