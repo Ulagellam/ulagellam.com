@@ -6,31 +6,6 @@ export default function Products() {
       <div className="container">
         <h1>Products</h1>
         <div className="row">
-          <div className="col col--12" id="neetling">
-            <h2>Neetling</h2>
-            <p>
-              Neetling incorporates the scientifically proven learning technique
-              called spaced repetition which optimizes study time, improves
-              long-term retention of study material and keeps NEET prep
-              stress-free.
-            </p>
-            <p>
-              This method fights the forgetting curve by exposing you to the
-              material repeatedly over increased intervals to keep information
-              fresh and accessible. With spaced repetition, you're not
-              memorizing; you're mastering the content.
-            </p>
-            <p>
-              For just Rs. 2999, experience an exceptional NEET prep journey
-              featuring high quality, science-backed tools with Neetling.
-            </p>
-            <p>
-              <a href="https://neetling.com/register" target="_blank">
-                Join
-              </a>{" "}
-              us today to start building your medical future.
-            </p>
-          </div>
           <div className="col col--12" id="moneymaker">
             <h2>Money Maker</h2>
             <p>

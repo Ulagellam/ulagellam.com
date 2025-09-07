@@ -4,19 +4,6 @@ import Link from "@docusaurus/Link";
 
 const ProductList = [
   {
-    src: "/img/neetling.png",
-    title: "Neetling",
-    circle: true,
-    hyperlink: "https://neetling.com",
-    description: (
-      <>
-        Join the world’s first NEET prep platform with science-backed learning
-        methods to ace the exam and crush the competition.
-      </>
-    ),
-    link: "#neetling",
-  },
-  {
     title: "Money Maker",
     src: "/img/moneymaker.png",
     circle: true,
