@@ -72,7 +72,6 @@ const config = {
 						position: "right",
 						label: "R&D",
 					},
-					{ to: "/blog", label: "Blog", position: "right" },
 				],
 			},
 			footer: {
@@ -102,10 +101,6 @@ const config = {
 					{
 						title: "Quick Links",
 						items: [
-							{
-								label: "Blog",
-								to: "/blog",
-							},
 							{
 								label: "About Us",
 								to: "/about-us",
