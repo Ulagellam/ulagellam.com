@@ -5,7 +5,7 @@ import clsx from "clsx";
 const teamMembers = [
   {
     name: "Umamaheswaran",
-    title: "Chairman, Ulagellam",
+    title: "tsipar, Ulagellam",
     image: "/img/uma.jpg",
     description: (
       <>
@@ -17,58 +17,6 @@ const teamMembers = [
         <br></br>
         Passionate about emerging tech, he brings innovation and insight to
         everything from software development to inspiring future talent.
-      </>
-    ),
-  },
-  {
-    name: "Chitra Umamaheswaran",
-    title: "CEO, Ulagellam",
-    image: "/img/chitra.jpg",
-    description: (
-      <>
-        Chitra is a commerce graduate driven by passion for business and
-        entrepreneurship. A proud mother of two, she skillfully balances her
-        family life with her creative pursuits. As a Tamil poet, Chitra draws on
-        her heritage to infuse her writing with depth and authenticity.
-        <br></br>
-        <br></br>
-        Her dedication to both family and career showcases her vibrant,
-        multifaceted approach to life.
-      </>
-    ),
-  },
-  {
-    name: "Sivasweatha Umamaheswaran",
-    title: "CEO, Neetling",
-    image: "/img/sivasweatha.jpg",
-    description: (
-      <>
-        Sivasweatha was an NIOS student who embraced open schooling after
-        returning to India from California, preferring hands-on learning without
-        external help.
-        <br></br>
-        <br></br>A self-taught Java and Python developer with strong leadership
-        skills, she is passionate about problem-solving, Data Structures and
-        Algorithms, with a keen focus on refining her skills in time and space
-        complexity.
-      </>
-    ),
-  },
-  {
-    name: "Sivayogeith Umamaheswaran",
-    title: "CTO, Ulagellam",
-    image: "/img/sivayogeith.jpg",
-    description: (
-      <>
-        Thirteen-year-old Sivayogeith has a passion for coding and for
-        supporting Ulagellam. He began learning Java at the age of 8, inspired
-        by his father, who nurtured his early interest in technology. He is also
-        the developer of Neetling.
-        <br></br>
-        <br></br>
-        Sivayogeith has a love for Angular, frontend, and full stack
-        development, and he is a content creator. And when he’s not coding, you
-        can find him hanging out with his beloved cats!
       </>
     ),
   },

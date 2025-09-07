@@ -11,8 +11,8 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 const clientId = "85e0e5f9-e99a-4822-bed9-b6511f418d61";
 
 const configuration = {
-  float: "right",
   showPoweredBy: false,
+  color: "#8e4ec6"
 };
 
 function HomepageHeader() {
