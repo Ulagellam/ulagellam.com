@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkulagellam_docusaurus=self.webpackChunkulagellam_docusaurus||[]).push([[947],{6600:a=>{a.exports=JSON.parse('{"authors":[{"name":"Umamaheswaran TG","title":"tsipar, Ulagellam","url":"https://github.com/h2i","imageURL":"/img/uma.jpg","key":"uma","page":null,"count":0}]}')}}]);
